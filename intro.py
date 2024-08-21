@@ -39,3 +39,15 @@ else:
     print("Du likte ikke vurdering.")
 
 # Oppgåve: La det vere likegyldig om brukaren skriv med store eller små bokstavar.
+
+# Løkker:
+for x in range(0, 11):
+    print(x)
+
+y = 0
+while y < 11:
+    print(y)
+    y+=1
+
+# Oppgåve: Spør brukaren av programmet om kva navnet hens er. Godta berre dersom det er
+# Jo Bjørnar. Ellers, spør på nytt.

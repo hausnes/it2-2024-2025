@@ -50,4 +50,4 @@ while y < 11:
     y+=1
 
 # Oppgåve: Spør brukaren av programmet om kva navnet hens er. Godta berre dersom det er
-# Jo Bjørnar. Ellers, spør på nytt.
+# Jo Bjørnar. Ellers, spør på nytt - utan å avbryte programmet.

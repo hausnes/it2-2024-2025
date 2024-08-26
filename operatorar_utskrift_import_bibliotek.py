@@ -53,7 +53,9 @@ antallTimar = speletidMinutter // 60 # heiltalsdivisjon
 rest = speletidMinutter % 60 # Modulus
 print(f"""
 Ein film med speletid på {speletidMinutter} minutt
-varar i {antallTimar} timar og {rest} minutt.     
+varar i 
+- {antallTimar} timar, og 
+- {rest} minutt.
 """)
 
 '''

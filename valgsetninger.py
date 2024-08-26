@@ -1,8 +1,8 @@
-# Valgsetninger
-alder = 15
+# Valsetningar
+alder = 15 # latar som om me har fått input frå brukar
 
 if alder > 0 and alder < 100:
-    print("Du er over 0.")
+    print("Du er over 0 og mindre enn 100 AKA mellom 1 og 99.")
 else:
     print("Du er under 0.")
 

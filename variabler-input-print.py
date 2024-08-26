@@ -1,15 +1,15 @@
 # Variablar
 tall1 = 5
 tall2 = 4
-resultat = tall1 + tall2
+summen = tall1 + tall2
 
 # Skrive ut ...
-print("Summen av",tall1,"og",tall2,"er",resultat,sep=" ")
-#print("Summen av " + tall1) # Dette går ikke fordi...
-print(f"Summen av {tall1} og {tall2} er {resultat}") # Formatted string
+print("resultat av",tall1,"og",tall2,"er",summen,sep=" ") # alt. 1: sep lar oss spesifisere kva mellomrom skal vere
+#print("resultat av " + tall1) # Utfordring: datatypar # alt. 2
+print(f"resultat av {tall1} og {tall2} er {summen}") # alt. 3: formatted string, anbefalt måte
 
-# Oppgave: Gjør det mulig for brukeren å velge hva tall1 og 2 er.
+# Oppgåve: Gjer det mogleg for brukaren å velgje kva tall1 og 2 er.
 tallEn = int(input("Tall 1: ")) # kunne brukt float for å ....
 tallTo = int(input("Tall 2: "))
 resultatet = tallEn + tallTo
-print(f"Summen av {tallEn} og {tallTo} er {resultatet}.")
+print(f"resultat av {tallEn} og {tallTo} er {resultatet}.")

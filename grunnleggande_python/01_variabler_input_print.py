@@ -12,4 +12,4 @@ print(f"resultat av {tall1} og {tall2} er {summen}") # alt. 3: formatted string,
 tallEn = int(input("Tall 1: ")) # kunne brukt float for å ....
 tallTo = int(input("Tall 2: "))
 resultatet = tallEn + tallTo
-print(f"resultat av {tallEn} og {tallTo} er {resultatet}.")
+print(f"Resultat av {tallEn} og {tallTo} er {resultatet}.")

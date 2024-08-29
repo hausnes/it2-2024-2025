@@ -1,5 +1,5 @@
 '''
-MÅ ikkje bruke same standard som boka beskriv, 
+MÅ ikkje bruke same standard som boka beskriv,
 men hald deg i det minste til ein standard!
 '''
 

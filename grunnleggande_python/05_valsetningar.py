@@ -1,5 +1,5 @@
 # Valsetningar
-alder = 15 # latar som om me har fått input frå brukar
+alder = 15  # latar som om me har fått input frå brukar
 
 if alder > 0 and alder < 100:
     print("Du er over 0 og mindre enn 100 AKA mellom 1 og 99.")
@@ -16,7 +16,7 @@ alderen = int(input("Kor gamal er du? "))
 #     print("Du kan ta førarkort for bil og moped.")
 # elif alderen < 18 and alderen >= 16:
 #     print("Du kan ta førarkort for moped.")
-# else: 
+# else:
 #     print("Du har ikkje riktig alder.")
 
 if alderen >= 21:
@@ -29,8 +29,9 @@ else:
     print("Du har ikkjee riktig alder.")
 
 # Lete etter "noe" i en string
-interesse = "chips og VuRdErinGsarbeid" # NB: Legg merke til store og små bokstavar
+interesse = "chips og VuRdErinGsarbeid"  # NB: Legg merke til store og små bokstavar
 if "vurdering" in interesse.lower():
     print("Min venn, me har noko til felles!")
 else:
     print("...")
+

@@ -23,7 +23,7 @@ def eventyr():
         "øst": {"beskrivelse": "Det er en drage som vokter en skatt.", "utforsket": False, "valg": {"vest": "start"}},
         "skattkammer": {"beskrivelse": "Du har funnet skatten! Gratulerer!", "utforsket": False, "valg": {}}
     }
-    
+
     inventar = []
     nåværende_rom = "start"
 

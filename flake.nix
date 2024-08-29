@@ -21,6 +21,12 @@
             nixfmt-rfc-style
             nixd
             # Verktøy for python
+            (python312.withPackages (
+              ps: with ps; [
+                numpy
+                matplotlib
+              ]
+            ))
             black
             pyright
           ];

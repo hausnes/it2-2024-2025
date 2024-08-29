@@ -15,18 +15,18 @@ else:
 # Oppgåve: Lag din eigen versjon av eit liknande konsept - med meir kompleksistet.
 # import random
 
-# def eventyr():
-#     # Opprett en verden med flere rom
-#     rom = {
-#         "start": {"beskrivelse": "Du står i et mørkt rom. Det er en dør til nord og en gang til øst.", "utforsket": False, "valg": {"nord": "nord", "øst": "øst"}},
-#         "nord": {"beskrivelse": "Du har funnet et sverd!", "utforsket": False, "valg": {"sør": "start"}},
-#         "øst": {"beskrivelse": "Det er en drage som vokter en skatt.", "utforsket": False, "valg": {"vest": "start"}},
-#         "skattkammer": {"beskrivelse": "Du har funnet skatten! Gratulerer!", "utforsket": False, "valg": {}}
-#     }
-    
-#     inventar = []
-#     nåværende_rom = "start"
-
+#def main():
+#   # Opprett en verden med flere rom
+#   rom = {
+#       "start": {"beskrivelse": "Du står i et mørkt rom. Det er en dør til nord og en gang til øst.", "utforsket": False, "valg": {"nord": "nord", "øst": "øst"}},
+#       "nord": {"beskrivelse": "Du har funnet et sverd!", "utforsket": False, "valg": {"sør": "start"}},
+#       "øst": {"beskrivelse": "Det er en drage som vokter en skatt.", "utforsket": False, "valg": {"vest": "start"}},
+#       "skattkammer": {"beskrivelse": "Du har funnet skatten! Gratulerer!", "utforsket": False, "valg": {}}
+#   }
+#
+#    inventar = []
+#    nåværende_rom = "start"
+#
 #     def vis_inventar():
 #         if inventar:
 #             print("Du har følgende i inventaret ditt: " + ", ".join(inventar))
@@ -67,4 +67,4 @@ else:
 #         else:
 #             print("Ugyldig kommando. Prøv igjen.")
 
-# eventyr()
+#main()

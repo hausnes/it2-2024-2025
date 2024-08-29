@@ -14,3 +14,21 @@ tilfeldigVal = random.choice(
 )
 print(tilfeldigVal)
 
+# Sjølve spelet -- tips til å kome i gang med ein litt meir avansert løysning
+poengSpelar = 0
+poengDatamaskin = 0
+
+print(f"""
+-------------------------------
+Velkommen til stein-saks-papir!
+Forklar reglar...
+--------------------------------
+""")
+
+while poengSpelar < 3 or poengDatamaskin < 3:
+    valg = input("Stein, saks eller papir? ")
+    # ...
+
+print(""" 
+      Oppsummering av resultat...
+""")

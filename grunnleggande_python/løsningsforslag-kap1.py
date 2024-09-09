@@ -41,3 +41,32 @@ for tall in range(21, 43, 7):
 # Talsekvensen 100, 90, 80, 70, 50, 40, 30, 20, 10:
 for tall in range(100, 9, -10):
     print(tall)
+
+'''
+Oppgåve 22 frå kapittel 1C
+'''
+def print_gangetabell(size):
+    """Printar ein gangetabell med gitt størrelse.
+
+    Args:
+        size: Størrelsen på gangetabellen (antall rader og kolonner).
+    """
+
+    # Skriv ut overskrifta med tala frå 1 til "size"
+    print("    ", end="")  # Legg til ekstra mellomrom for å justere overskrifta
+    for i in range(1, size + 1):
+        print(f"{i:4}", end="")
+    print()
+
+    # Skriv ut ei horisontal linje
+    print("    ", "-" * (size * 4 + 1))
+
+    # Skriv ut sjølve gangetabellen
+    for i in range(1, size + 1):
+        print(f"{i:2} |", end="")  # Juster radetikettar
+        for j in range(1, size + 1):
+            print(f"{i * j:4}", end="")
+        print()
+
+# Kallar funksjonen for å printe ein size x size gangetabell
+print_gangetabell(7)

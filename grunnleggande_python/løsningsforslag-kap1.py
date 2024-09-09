@@ -22,3 +22,22 @@ vinkel_radianer = math.radians(vinkel_grader)
 hypotenus = hosliggende_katet / math.cos(vinkel_radianer)
 
 print("Hypotenusen er:", hypotenus)
+
+'''
+Oppgåve 1 frå kapittel 1C
+'''
+# Tala frå og med 1 til og med 30:
+for tall in range(1, 31):
+    print(tall)
+# 100 første partala:
+for tall in range(2, 201, 2):
+    print(tall)
+# 5-ganger (frå og med 5, til og med 50):
+for tall in range(5, 51, 5):
+    print(tall)
+# Talsekvensen 21, 28, 35, 42:
+for tall in range(21, 43, 7):
+    print(tall)
+# Talsekvensen 100, 90, 80, 70, 50, 40, 30, 20, 10:
+for tall in range(100, 9, -10):
+    print(tall)

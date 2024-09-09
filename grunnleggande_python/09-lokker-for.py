@@ -12,6 +12,7 @@ if any(bokstav in forbudte_bokstaver for bokstav in innlest.lower()):
     print("Ikkje lov til å bruke æ, ø eller å.")
 
 # Stein, saks, papir og tilfeldigheiter
+# Kva betyr det at noko er tilfeldig?
 import random
 
 antallStein = 0

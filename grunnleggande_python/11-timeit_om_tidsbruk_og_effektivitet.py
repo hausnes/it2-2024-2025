@@ -27,5 +27,5 @@ tid2 = timeit.timeit(versjon2, number=10000)
 print(f"Versjon 1 tid: {tid1}")
 print(f"Versjon 2 tid: {tid2}")
 
-# Di oppgåve: Samanlikn match-case og if-elif-else
+# Di oppgåve: Samanlikn til dømes match-case og if-elif-else (eller noko anna du er nysjerrig på)...
 # ...

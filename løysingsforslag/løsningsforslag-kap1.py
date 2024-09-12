@@ -70,3 +70,19 @@ def print_gangetabell(size):
 
 # Kallar funksjonen for å printe ein size x size gangetabell
 print_gangetabell(7)
+
+'''
+Oppgåve 24 frå kapittel 1C
+'''
+while True:
+    maanednr = input("Oppgi nummeret til måneden vi er i ")
+
+    try:
+        maanednr = int(maanednr)
+        if maanednr >= 1 and maanednr <= 12:
+            print(f"Du skrev inn {maanednr}.")
+            break
+        else:
+            print("Du må oppgi et tall mellom 1 og 12.")
+    except ValueError:
+        print("Du må oppgi et gyldig tall.")

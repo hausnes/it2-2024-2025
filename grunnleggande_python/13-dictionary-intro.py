@@ -4,6 +4,10 @@ person = {
 }
 # Eksempel på korleis skrive ut utvalt del
 print(person["etternavn"])
+# Nyttig å vite at me kan spesifisere keys, values og items
+print(person.keys())
+print(person.values())
+print(person.items())
 
 personer = {
     "999999-99999": {

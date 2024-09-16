@@ -1,14 +1,18 @@
+# Dict. med informasjon om ein person
 person = {
   "fornavn": "Per", 
   "etternavn": "Christensen"
 }
+
 # Eksempel på korleis skrive ut utvalt del
 print(person["etternavn"])
+
 # Nyttig å vite at me kan spesifisere keys, values og items
 print(person.keys())
 print(person.values())
 print(person.items())
 
+# Samling med fleire personar
 personer = {
     "999999-99999": {
         "fornavn"   : "Jo Bjørnar",
@@ -44,8 +48,11 @@ norske_byer = {
         "landemerker": ["Preikestolen", "Oljemuseet", "Domkirken"] 
     }
 }
+
 # Eksempel på korleis skrive ut utvalt del
-print(norske_byer["Bergen"]["landemerker"])
+print(norske_byer["Bergen"]["landemerker"][1])
+print()
+
 # Eksempel på korleis skrive ut utvalt del vha løkke
 for landemerke in norske_byer["Bergen"]["landemerker"]:   
     print(f"{landemerke}.")

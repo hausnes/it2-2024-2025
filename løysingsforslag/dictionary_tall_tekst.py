@@ -24,3 +24,25 @@ if tall_inn in tall_tekst:
     print(f"Teksten for {tall_inn} er {tall_tekst[tall_inn]}.")
 else:
     print(f"Ugyldig tall. Prøv igjen.")
+
+'''
+    # Oppgåve: utvidelse av konseptet over.
+    # Du skal no legge til skrivemåten på fleire språk. 
+'''
+tall_tekst = {
+    1: {"norsk": "en", "engelsk": "one", "spansk": "uno"},
+    2: {"norsk": "to", "engelsk": "two", "spansk": "dos"},
+    3: {"norsk": "tre", "engelsk": "three", "spansk": "tres"},
+    4: {"norsk": "fire", "engelsk": "four", "spansk": "cuatro"},
+    5: {"norsk": "fem", "engelsk": "five", "spansk": "cinco"},
+    6: {"norsk": "seks", "engelsk": "six", "spansk": "seis"},
+    7: {"norsk": "syv", "engelsk": "seven", "spansk": "siete"},
+    8: {"norsk": "åtte", "engelsk": "eight", "spansk": "ocho"},
+    9: {"norsk": "ni", "engelsk": "nine", "spansk": "nueve"},
+    10: {"norsk": "ti", "engelsk": "ten", "spansk": "diez"}
+}
+
+# Eksempel på korleis du kan bruke dictionaryen i dette tilfellet
+tall = 3
+språk = "engelsk"
+print(f"Tallet {tall} på {språk} er '{tall_tekst[tall][språk]}'")

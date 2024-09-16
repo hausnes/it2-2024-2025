@@ -3,3 +3,4 @@
 ## Elever sine løsninger/notater
 [lilleaila/it2](https://github.com/LilleAila/projects/tree/main/it2)
 [IldenH/IT2](https://github.com/IldenH/IT2)
+[didriksn/IT2](https://github.com/didriksn/IT2)

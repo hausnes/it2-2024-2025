@@ -51,7 +51,7 @@ def legg_saman(a, b):
 resultat = legg_saman(3, 5)
 print(resultat)  # Output: 8
 ```
-## Arbitære argumenter
+## Arbitrære argumenter
 En funksjon kan ta et ukjent antall argumenter ved hjelp av *args og **kwargs.
 
 ```python

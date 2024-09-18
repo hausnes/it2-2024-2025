@@ -35,7 +35,7 @@ def hei_namn(namn="verden"):
     print(f"Hei, {namn}!")
 
 # Kalle funksjonen med et argument
-hei_namn("Ola")
+hei_namn("Ola") # Output: Hei, Ola!
 # Kalle funksjonen uten argument
 hei_namn()  # Output: Hei, verden!
 ```

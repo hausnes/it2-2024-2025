@@ -8,7 +8,7 @@ Det ligger noen eksempler i denne mappen. [bruker-innlogging.puml](./bruker-innl
 
 ## Kjøre plantuml
 
-Hvis du ikke bruker vscode-extensionsn, kan du kjøre kommandoen
+Hvis du ikke bruker vscode-extensionen, kan du kjøre kommandoen
 
 ```sh
 plantuml navn-på-fil.puml

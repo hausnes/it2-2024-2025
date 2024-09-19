@@ -1,0 +1,30 @@
+' Skrevet av Håvard
+' Lisens: GPLv3
+
+@startuml
+start
+:lag variabler for spilleren og datamaskinen sine poengsummer;
+while (er poengsummen til begge spillerene under 3?)
+  :datamaskinen velger et tilfeldig trekk;
+  repeat :spør spiller om å velge stein, saks eller papir;
+  repeat while (er trekket et gyldig trekk?) is (nei) not (ja)
+
+  if (valgte spiller og datamaskin det samme?) then (ja)
+    :uavgjort, ingen får poeng;
+  (nei) elseif (hvem vant runden?) then (spiller)
+    :gi spiller et poeng;
+  else (datamaskinen)
+    :gi datamaskinen et poeng;
+  endif
+
+  backward:neste runde;
+endwhile
+
+if (hvem har mest poeng?) then (spiller)
+  :skriv ut "du vant!";
+  kill
+else (datamaskinen)
+  :skriv ut "datamaskinen vant!";
+  kill
+endif
+@enduml

@@ -1,0 +1,53 @@
+' Skrevet av Olai
+' Lisens: GPLv3
+
+' Dette er en kommentar
+
+' Alle flytskjemaer starter med @startuml og slutter med @enduml
+@startuml
+' Navn på skjemaet
+title Bruker-innlogging
+
+' Start
+start
+
+' Tekst i () i slike blokker blir vist i boksene
+if (Eksisterer brukeren?) then (Ja)
+' Navn på pilene
+else (Nei)
+  partition "Lag bruker" {
+    ' Repeat går tilbake til der den startet
+    repeat :Spør om brukernavn; <<input>>
+    ' Vanlige bokser skrives med : og ;
+    ' , og man *kan* legge til en type på slutten av linjen
+    :Spør om passord; <<input>>
+    :Spør om passord igjen; <<input>>
+    ' Gå tilbake hvis de ikke er like
+    repeat while (Er passordene like?) is (Nei) not (Ja)
+  }
+endif
+
+' Den kobler automatisk alt til den neste blokken
+
+' En blokk rundt en del av skjemaet
+partition "Logg inn" {
+  repeat :Spør om brukernavn; <<input>>
+  :Spør om passord; <<input>>
+  repeat while (Er det riktig?) is (Nei) not (Ja)
+}
+
+partition "Tofaktor autentisering" {
+  if (Har brukeren satt opp 2fa?) then (Ja)
+    repeat :Spør brukeren om kode; <<input>>
+    repeat while (Er koden riktig?) is (Nei) not (Ja)
+  else (Nei)
+  ' Slike tomme blokker vil bare lage en pil med navn "Nei" som går videre til neste
+  endif
+}
+
+:Logg inn bruker;
+
+' Stopp
+end
+
+@enduml

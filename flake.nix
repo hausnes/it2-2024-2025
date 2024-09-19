@@ -16,7 +16,7 @@
     {
       devShells = forEachSystem (pkgs: {
         default = pkgs.mkShell {
-          nativeBuildInputs = with pkgs; [
+          packages = with pkgs; [
             # Verktøy for nix
             nixfmt-rfc-style
             nixd
@@ -29,6 +29,8 @@
             ))
             black
             pyright
+            # Flytskjemaer
+            plantuml
           ];
         };
       });

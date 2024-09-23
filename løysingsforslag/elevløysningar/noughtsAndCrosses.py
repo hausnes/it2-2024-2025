@@ -1,5 +1,3 @@
-#Laget av Thomas
-
 import os 
 
 board = [
@@ -38,7 +36,7 @@ def turn(player, usedCoordinates):
     while True:         
         try:
             #Sjekker om de er kun tall og mapper dem 
-            coordinates = list(map(int, input("Hvor vil du plassere brikken din? Oppgi 2 tall som x og y koordinat (for eksempel: 0 0) ").split()))
+            coordinates = list(map(int, input("Hvor vil du plassere brikken din? Oppgi 2 tall som x og y koordinat (for eksempel: 2 2) ").split()))
 
             #Sjekker om det kun er 2 tall
             if len(coordinates) == 2:
@@ -130,11 +128,19 @@ def noughtsAndCrosses(player=1, usedCoordinatesUpdating=[]):
 
 if __name__ == "__main__":
     clearScreen()
+    printBoard()
     noughtsAndCrosses()
     while True: 
-        fortsett = input("Vil du fortsette? Y/N ")
+        fortsett = input("Vil du fortsette? Y/N ").upper()
         if fortsett == "Y":
             print("Ny runde")
+            
+            board = [
+                     [-1,-1,-1],
+                     [-1,-1,-1],
+                     [-1,-1,-1]
+                    ]
+            
             clearScreen()
             noughtsAndCrosses()
         elif fortsett == "N":

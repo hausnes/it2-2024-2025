@@ -6,6 +6,7 @@
         - https://developers.google.com/edu/python/regular-expressions 
         - https://nowitsanurag.medium.com/regular-expression-in-python-f42483e80daa 
         - https://www.programiz.com/python-programming/regex
+        - NB: Powertoys sin PowerRename funksjon har ein regex-modus som kan vere nyttig for å teste regex-uttrykk.
 
     re.compile blir brukt til å kompilere eit regulært uttrykk (regex) mønster til et regex-objekt. 
     Dette objektet kan deretter brukast til å utføre match-operasjonar på strengar.

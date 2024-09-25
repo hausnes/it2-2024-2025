@@ -1,7 +1,7 @@
 '''
     Versjon 0 av quizen.
     Dette er ein særs forenkla versjon der ein 
-    - lagrar innbyggjartal som heiltal, og ikkje som streng
+    - lagrar innbyggjartal som streng, ikkje som heiltal
     - ikkje har støtte for fleire svaralternativ for naboland
     - ikkje har støtte for å godta eit svar innan +-10% av det korrekte svaret
     - ikkje klarar å velgje eit tilfeldig spørsmål

@@ -1,7 +1,8 @@
 '''
     Versjon 1 av quizen.
-    Dette er ein forenkla versjon der ein lagrar innbyggjartal som heiltal, og ikkje som streng.
-    Kontrollen/sjekken på om det er riktig svar er derfor enklare enn i seinare versjonar.
+    Får til å hente ut tilfeldige spørsmål og svar, og sjekkar om brukarinput er likt det korrekte svaret.
+    Dette er ein forenkla versjon der ein lagrar innbyggjartal som ein streng, og ikkje som heiltal.
+    I tillegg har ein ikkje støtte for fleire svaralternativ for naboland, eller å godta eit svar innan +-10% av det korrekte svaret.
 '''
 
 fakta = {

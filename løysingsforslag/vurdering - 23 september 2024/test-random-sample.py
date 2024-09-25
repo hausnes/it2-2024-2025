@@ -1,3 +1,5 @@
+# Ein kjapp test for å leike litt med konseptet om å hente ut tilfeldige element frå ei ordbok/dictionary.
+
 fakta = {
     "Norway" : {
         "capital" : "Oslo",
@@ -23,6 +25,18 @@ fakta = {
 
 import random
 
-tilfeldige_sporsmal = random.sample(fakta.keys(), 3)
+land_liste = list(fakta.keys())
 
-print(tilfeldige_sporsmal)
+tilfeldige_land = random.sample(land_liste, 3)
+
+print(tilfeldige_land)
+
+# Velg eit tilfeldig spørsmål for kvart land
+sporsmal_liste = []
+for land in tilfeldige_land:
+    nøkkel = random.choice(list(fakta[land].keys()))
+    sporsmal_liste.append((land, nøkkel, fakta[land][nøkkel]))
+
+# Skriv ut spørsmåla
+for land, nøkkel, verdi in sporsmal_liste:
+    print(f"Land: {land}, Spørsmål: {nøkkel}, Svar: {verdi}")

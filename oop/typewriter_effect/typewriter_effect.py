@@ -6,11 +6,20 @@ from time import sleep
 
 words = "This is just a test :P"
 
-def skrivUt(ord):
+def skrivUt(ord, kjapt=True):
+    sovetid = 0.03 # AKA kjapt
+
+    if not kjapt: # Dersom brukaren spesifiserer False
+        sovetid = 0.3
+
+    # print(f"sovetid er satt til {sovetid}")
+
     for char in ord:
-        sleep(0.1)
+        sleep(sovetid)
         sys.stdout.write(char)
         sys.stdout.flush()
-        
 
-skrivUt(words)
+    print()
+        
+# print(words)
+# skrivUt(words)

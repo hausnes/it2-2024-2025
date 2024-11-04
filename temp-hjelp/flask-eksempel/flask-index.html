@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flash Meldinger</title>
+</head>
+<body>
+    <h1>Velkommen til Flask-applikasjonen!</h1>
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <ul>
+            {% for message in messages %}
+                <li>{{ message }}</li>
+            {% endfor %}
+            </ul>
+        {% endif %}
+    {% endwith %}
+    <a href="{{ url_for('flash_message') }}">Generer en flash-melding</a>
+</body>
+</html>

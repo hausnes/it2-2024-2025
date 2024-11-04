@@ -1,0 +1,23 @@
+@startuml Eksempel
+!define DARKRED
+
+class Person {
+    String navn
+    int alder
+    oppdaterAlder()
+}
+
+class Student {
+    String studentnummer
+    String klasse
+    oppdaterKlasse()
+}
+
+class Lærer {
+    String ansattnummer
+}
+
+Person <|-- Student
+Person <|-- Lærer
+
+@enduml

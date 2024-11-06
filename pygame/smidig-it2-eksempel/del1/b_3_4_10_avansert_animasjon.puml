@@ -1,0 +1,42 @@
+@startuml Avansert animasjon
+
+package "pygame.sprite" {
+    class Sprite {
+    }
+
+    class Group {
+        +add(sprite)
+        +draw()
+    }
+    Group "*" -r- "*" Sprite
+}
+
+class App {
+    clock: Clock
+    screen: pygame.Surface
+    all_sprites: pygame.sprite.Group
+    running: bool
+    timer: int
+    handle_events()
+    update()
+    draw()
+    run()
+}
+
+class Ball {
+    diameter: int
+    image: pygame.Surface
+    farge: list
+    rect: pygame.Rect
+    dx: int
+    dy: int
+    update()
+}
+
+Ball -u-|> Sprite
+App  "1" *-u- "1" Group : all_sprites
+
+
+@enduml
+
+' Smidig IT-2 © TIP AS, 2024

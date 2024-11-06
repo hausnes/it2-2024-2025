@@ -1,3 +1,10 @@
+'''
+"Barebones"-eksempel på Pong, der me ikkje nyttar OOP.
+Per no er det berre ein ball og to "paddlar", og ballen
+blir ikkje stoppa av paddlane, ei heller blir kræsj med
+kantane handtert. Dette kjem me tilbake til seinare.
+'''
+
 import pygame
 
 # Initialiser spelet

@@ -3,9 +3,9 @@
 
 # Local Installation (see links in Smidig IT-2)
 We will use PlantUML, which can be installed as an extension in VS Code. For it to work, we also need to install Java and Graphviz. We can manage without Graphviz, as it can be a bit tricky to install on Mac. Instead, we can use Smetana, which is built into PlantUML and specified with `!pragma layout smetana` in the code. The links are on the PlantUML page in VS Code. Watch these three videos to get started with PlantUML:
-1. [Using PlantUML in VSCode (6 min)](https://www.youtube.com/watch?v=XYZ)
-2. [PlantUML - beautiful quick diagrams to explain your models (16 min)](https://www.youtube.com/watch?v=XYZ)
-3. [PlantUML with Domain Models (class diagrams) (10 min)](https://www.youtube.com/watch?v=XYZ)
+1. [Using PlantUML in VSCode (6 min)](https://youtu.be/xkwJ9GwgZJU)
+2. [PlantUML - beautiful quick diagrams to explain your models (16 min)](https://www.youtube.com/watch?v=EM-cvRubP4g)
+3. [PlantUML with Domain Models (class diagrams) (10 min)](https://youtu.be/46m3_03uzfw)
 
 More information can be found on the PlantUML website, and here is an [instruction book](https://www.plantuml.com/book) that might be useful.
 

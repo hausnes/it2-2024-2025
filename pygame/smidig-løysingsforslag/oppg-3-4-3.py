@@ -35,7 +35,21 @@ class Ball(pg.sprite.Sprite):
         direction = 1 if self.teller/self.bilder < 1 else -1
 
         # Beregn relativ framgang
-        progress = (self.teller % self.bilder)/self.bilder
+
+        # Alt 1: Kortversjon
+        # progress = (self.teller % self.bilder)/self.bilder
+        # Alt 2: Langversjon, steg for steg
+        # Antall bilder i animasjonen
+        antall_bilder = self.bilder
+        # Teller som øker med tiden eller antall iterasjoner
+        teller = self.teller
+        # Finn resten når teller deles på antall bilder
+        resten = teller % antall_bilder
+        # Beregn fremdriften som en brøkdel av den totale lengden
+        fremdrift = resten / antall_bilder
+        # Tilordne fremdriften til progress
+        progress = fremdrift
+
         x = total_distance * tween.easeInOutExpo(progress)
         self.rect.x = x if direction == 1 else WIDTH - x - self.rect.width
 

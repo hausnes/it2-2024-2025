@@ -20,7 +20,7 @@ class Ball(pg.sprite.Sprite):
         super().__init__()
         self.image = pg.Surface((40,40))
         self.image.set_colorkey('black')
-        pg.draw.circle(self.image, "darkgreen", (20, 20), 20)
+        pg.draw.circle(self.image, "darkblue", (20, 20), 20)
         self.rect = self.image.get_rect()
         self.rect.center = (WIDTH/2, HEIGHT/2)
         self.vinkel  = 0
@@ -41,7 +41,6 @@ class App:
         self.all_sprites = pg.sprite.Group()
         ball = Ball()
         self.all_sprites.add(ball)
-
 
     def handle_events(self):
         for event in pg.event.get():
@@ -64,7 +63,6 @@ class App:
             self.draw()
             self.clock.tick(FPS)
         pg.quit()
-
 
 if __name__ == "__main__":
     app = App()

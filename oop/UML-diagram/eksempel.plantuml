@@ -1,5 +1,4 @@
 @startuml Eksempel
-!define DARKRED
 
 class Person {
     String navn

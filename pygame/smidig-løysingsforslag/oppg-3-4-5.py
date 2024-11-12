@@ -59,7 +59,7 @@ class App:
     def update(self):
         self.all_sprites.update()
 
-        if pg.time.get_ticks() - self.timer >= 1000:
+        if pg.time.get_ticks() - self.timer >= 1000: # Kvart sekund gen. ein ny ball
             self.timer = pg.time.get_ticks()
             self.all_sprites.add(Ball())
 

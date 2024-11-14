@@ -75,7 +75,9 @@ while running:
             mouse_x, mouse_y = event.pos
             # Kalkuler retningsvektoren https://www.pygame.org/docs/ref/math.html#pygame.math.Vector2
             direction = pygame.math.Vector2(mouse_x - player.rect.centerx, mouse_y - player.rect.centery)
+            print("direction:",direction)
             direction = direction.normalize() # Dette gjer me for skalere lengden (til 1), medan retningen forblir lik
+            print("direction, etter normalize:",direction)
             # Lage eit nytt skudd
             bullet = Bullet(player.rect.centerx, player.rect.centery, direction)
             bullets.append(bullet)

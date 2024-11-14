@@ -1,4 +1,9 @@
-# Enkelt eksempel for å skyte skudd basert på kor spelaren er
+'''
+Enkelt eksempel for å skyte skudd basert på kor spelaren er.
+Du navigerer med WASD på tastaturet, og skyt med å trykke med muspeikaren
+på skjermen i den retningen du ynskjer.
+Nyttar Vector2 frå PyGame og normalize for å handtere retning og fart.
+'''
 
 import pygame
 import sys

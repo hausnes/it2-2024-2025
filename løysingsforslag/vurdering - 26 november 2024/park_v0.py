@@ -14,7 +14,7 @@ class Bil:
 
 class PHus:
     def __init__(self):
-        self.parkerte_biler = {}
+        self.parkerte_biler = {} # Dictionary med reg_nr som nøkkel
         print(
             f"Opprettet parkingshus med {ANTALL_PLASSER} plasser", end='\n\n')
 

@@ -2,14 +2,17 @@ print('BMI-kalkulator')
 
 while True:
     tekst = input('Høyde i cm: ')
+    
     if tekst == '':
         print('Takk for nå!')
         break
+    
     try:
         hoyde_cm = float(tekst)
         vekt = float(input('Vekt i kg: '))
     except:
         print('Input må være tall.')
+    
     else:
         hoyde_m = hoyde_cm / 100
         bmi = vekt/hoyde_m**2

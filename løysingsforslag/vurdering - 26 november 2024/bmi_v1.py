@@ -10,7 +10,7 @@ while True:
     try:
         hoyde_cm = float(tekst)
         vekt = float(input('Vekt i kg: '))
-    except:
+    except ValueError:
         print('Input må være tall.')
     
     else:

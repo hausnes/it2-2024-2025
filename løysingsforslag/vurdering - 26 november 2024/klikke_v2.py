@@ -42,7 +42,28 @@ class App:
     def is_click_inside_firkant(self, pos):
         x, y = pos
         fx, fy = self.firkant_posisjon
-        return fx <= x <= fx + FIRKANT_STORRELSE and fy <= y <= fy + FIRKANT_STORRELSE
+        #return fx <= x <= fx + FIRKANT_STORRELSE and fy <= y <= fy + FIRKANT_STORRELSE
+        
+        # Sjekk om x-koordinaten er større enn eller lik startpunktet for firkanten
+        x_storre_enn_start = x >= fx
+
+        # Sjekk om x-koordinaten er mindre enn eller lik sluttpunktet for firkanten
+        x_mindre_enn_slutt = x <= fx + FIRKANT_STORRELSE
+
+        # Sjekk om y-koordinaten er større enn eller lik startpunktet for firkanten
+        y_storre_enn_start = y >= fy
+
+        # Sjekk om y-koordinaten er mindre enn eller lik sluttpunktet for firkanten
+        y_mindre_enn_slutt = y <= fy + FIRKANT_STORRELSE
+
+        # Sjekk om x-koordinaten er innenfor firkanten
+        x_innenfor = x_storre_enn_start and x_mindre_enn_slutt
+
+        # Sjekk om y-koordinaten er innenfor firkanten
+        y_innenfor = y_storre_enn_start and y_mindre_enn_slutt
+
+        # Returner True hvis både x og y er innenfor firkanten
+        return x_innenfor and y_innenfor
 
     def update(self):
         self.all_sprites.update()

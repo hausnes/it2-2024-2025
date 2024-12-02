@@ -79,6 +79,10 @@ class App:
         text = font.render(f"Klikk: {self.antall_klikk}", True, pg.Color("white"))
         self.screen.blit(text, (10, 10))
 
+        # Vis beste resultat i spillvinduet (heller ikke en del av den originale oppgaveteksten)
+        text_highscore = font.render(f"Rekord: {self.antall_klikk_rekord}", True, pg.Color("Black"))
+        self.screen.blit(text_highscore, (10, 40))
+
         pg.display.flip()
 
     def run(self):

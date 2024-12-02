@@ -1,5 +1,4 @@
 from datetime import datetime
-# from typing import Dict
 
 ANTALL_PLASSER = 20
 PRIS_PER_MINUTT = 1.5
@@ -21,6 +20,9 @@ class Bil:
     def antall_plasser(self):
         return 1
 
+    def beregn_parkeringsavgift(self, minutter_parkert):
+        return minutter_parkert * PRIS_PER_MINUTT * self.antall_plasser()
+
 class Lastebil(Bil):
     '''
     Klassen Lastebil arver fra klassen Bil og representerer en lastebil.
@@ -33,9 +35,6 @@ class Lastebil(Bil):
     def antall_plasser(self):
         return 2
 
-    def beregn_parkeringsavgift(self, minutter_parkert):
-        return minutter_parkert * PRIS_PER_MINUTT * 2
-
 class PHus:
     '''
     Klassen PHus representerer et parkeringhus med en viss mengde plasser.
@@ -45,8 +44,7 @@ class PHus:
     def __init__(self):
         self.parkerte_biler = {}
         self.opptatte_plasser = 0
-        print(
-            f"Opprettet parkingshus med {ANTALL_PLASSER} plasser", end='\n\n')
+        print(f"Opprettet parkingshus med {ANTALL_PLASSER} plasser", end='\n\n')
 
     def innkjøring(self, bil, tid):
         if self.opptatte_plasser + bil.antall_plasser() > ANTALL_PLASSER:
@@ -61,15 +59,10 @@ class PHus:
     def utkjøring(self, reg_nr, tid):
         bil = self.parkerte_biler.pop(reg_nr)
         self.opptatte_plasser -= bil.antall_plasser()
-        minutter_parkert = (tid - bil.innkjøringstid).total_seconds()/60
-        if isinstance(bil, Lastebil):
-            parkeringsavgift = bil.beregn_parkeringsavgift(minutter_parkert)
-        else:
-            parkeringsavgift = minutter_parkert * PRIS_PER_MINUTT
-        print(
-            f"{bil.reg_nr} {bil.farge} {bil.modell} kjørte ut {tid.strftime('%H:%M')}")
-        print(
-            f"Parkeringstid: {minutter_parkert:.0f} min., avgift kr {parkeringsavgift:.2f}")
+        minutter_parkert = (tid - bil.innkjøringstid).total_seconds() / 60
+        parkeringsavgift = bil.beregn_parkeringsavgift(minutter_parkert)
+        print(f"{bil.reg_nr} {bil.farge} {bil.modell} kjørte ut {tid.strftime('%H:%M')}")
+        print(f"Parkeringstid: {minutter_parkert:.0f} min., avgift kr {parkeringsavgift:.2f}")
         self.vis_ledige_plasser()
 
     def vis_ledige_plasser(self):

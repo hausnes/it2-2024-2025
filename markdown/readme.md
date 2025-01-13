@@ -4,7 +4,7 @@ Markdown er eit enkelt språk for å skrive tekst med formatering. Det er lett �
 
 Denne guiden gir ein kort innføring i dei mest brukte funksjonane i Markdown.
 
-Du kan lese meir 
+Du kan lese meir i dokumentasjonen til Markdown: [Markdown Guide](https://www.markdownguide.org/). Det står og noko hjå GitHub: [Mastering Markdown](https://guides.github.com/features/mastering-markdown/).
 
 ## Overskrifter
 

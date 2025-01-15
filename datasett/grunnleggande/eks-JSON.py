@@ -11,4 +11,6 @@ with open(filnavn, encoding="utf-8") as fil:
 # print(data["land"][0]["navn"]) # ..fordi det under land ligg ei liste..
 
 for x in data["land"]:
-    print(x)
+    print(f'Landet {x["navn"]} har fylgjande byar:')
+    for y in range(len(x["byer"])):
+        print(f'\t{x["byer"][y]}')

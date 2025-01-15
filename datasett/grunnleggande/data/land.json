@@ -1,0 +1,38 @@
+{
+    "region": "Skandinavia",
+    "land": [
+      {
+        "navn": "Norge",
+        "valuta": "NOK",
+        "byer": [
+          "Oslo",
+          "Bergen",
+          "Stavanger/Sandnes",
+          "Trondheim",
+          "Fredrikstad/Sarpsborg"
+        ]
+      },
+      {
+        "navn": "Sverige",
+        "valuta": "SEK",
+        "byer": [
+          "Stockholm",
+          "Göteborg",
+          "Malmö",
+          "Uppsala",
+          "Västerås"
+        ]
+      },
+      {
+        "navn": "Danmark",
+        "valuta": "DKK",
+        "byer": [
+          "København",
+          "Aarhus",
+          "Odense",
+          "Aalborg",
+          "Esbjerg"
+        ]
+      }
+    ]
+}

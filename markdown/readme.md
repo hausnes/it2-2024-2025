@@ -68,3 +68,13 @@ Tabellar blir skrive med `|`. Dette er ein tabell:
 |---------|-----------|-------|
 | Ola     | Nordmann  | 32    |
 | Kari    | Nordkvinne| 28    |
+
+
+## Kodeblokker
+
+Kodeblokker blir skrive med tre backticks (\`\`\`). Dette er ei kodeblokk:
+
+```python
+def hello():
+    print("Hello, world!")
+```

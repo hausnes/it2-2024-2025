@@ -53,3 +53,18 @@ Lenker blir skrive med `[tekst](url)`. Dette er ei [lenke til Google](https://ww
 ## Emojis
 
 Emojis går an å bruke i markdown. 🎅 og ✅ og ❌ og ...
+
+## Bileter
+
+Bileter blir skrive med `![alternativ tekst](url)`.
+
+![Bilete av ein solnedgang](https://images.unsplash.com/photo-1735506266367-d6941df3efdc?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
+
+## Tabellar
+
+Tabellar blir skrive med `|`. Dette er ein tabell:
+
+| Fornavn | Etternamn | Alder |
+|---------|-----------|-------|
+| Ola     | Nordmann  | 32    |
+| Kari    | Nordkvinne| 28    |

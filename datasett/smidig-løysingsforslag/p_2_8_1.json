@@ -1,0 +1,22 @@
+ [
+  {
+    "navn": "Kari",
+    "vekt": 62,
+    "høyde": 165
+  },
+  {
+    "navn": "Elise",
+    "vekt": 59,
+    "høyde": 171
+  },
+  {
+    "navn": "Gunnar",
+    "vekt": 84,
+    "høyde": 187
+  },
+  {
+    "navn": "Helge",
+    "vekt": 76,
+    "høyde": 178
+  }
+]

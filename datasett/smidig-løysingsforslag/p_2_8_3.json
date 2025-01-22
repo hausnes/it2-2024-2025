@@ -1,0 +1,50 @@
+{
+  "Toyota": [
+    {
+      "modell": "Corolla",
+      "farge": "Grønn"
+    },
+    {
+      "modell": "Land Cruiser",
+      "farge": "Hvit"
+    }
+  ],
+  "Ford": [
+    {
+      "modell": "Mustang",
+      "farge": "Rød"
+    },
+    {
+      "modell": "Mustang",
+      "farge": "Blå"
+    },
+    {
+      "modell": "Escort",
+      "farge": "Hvit"
+    },
+    {
+      "modell": "Explorer",
+      "farge": "Grå"
+    }
+  ],
+  "Volkswagen": [
+    {
+      "modell": "ID.4",
+      "farge": "Grå"
+    },
+    {
+      "modell": "Golf",
+      "farge": "Gul"
+    },
+    {
+      "modell": "Caravelle",
+      "farge": "Sølv"
+    }
+  ],
+  "Porsche": [
+    {
+      "modell": "911 Carrera",
+      "farge": "Rød"
+    }
+  ]
+}

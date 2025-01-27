@@ -1,0 +1,37 @@
+Førebuingsdel
+
+Oslo Bysykkel tilbyr utleie av sykler til personturer i Oslo. 
+En bruker kan hente ut en sykkel på en valgfri stasjon, A og levere sykkelen tilbake 
+på den samme eller en annen valgfri stasjon, B. Dette blir registrert som en tur fra 
+A til B. Vedlagt ligger et datasett som inneholder alle registrerte turer i mai 2022, 
+i CSV- og JSON-format. Du kan velge hvilket av formatene du vil bruke. 
+
+Last ned datasettet i ønsket format og gjør deg kjent med det. 
+Du må også forberede deg på å behandle datasettet med programmering og planlegge 
+hvilke(t) bibliotek(er) som er egnet til dette. Du må også kontrollere at du har de 
+nødvendige ressurser installert på den datamaskinen du skal bruke på eksamen. 
+På eksamen vil du få to oppgaver hvor du skal behandle dette datasettet og presentere 
+informasjon fra det med programmering.
+
+Datasettet har følgende nøkler:
+started_at, ended_at : tidspunkt
+duration : tid
+start_station_id, end_station_id : heltall
+start_station_name, start_station_description, end_station_name, end_station_description : tekst
+start_station_latitude, start_station_longitude, end_station_latitude, end_station_longitude : desimaltall (posisjon som lengdegrad og breddegrad)
+
+Separatoren i CSV-filen er komma.
+
+Eksamensoppgåve
+
+Du skal lage et program som leser inn informasjon fra datasettet og presenterer dette i 
+to oversikter. Du skal bruke datasettet fra forberedelsen. Hvis du ikke har forberedt 
+dette kan du også laste ned datasettet fra forberedelsesdelen nå.
+
+a)
+Lag et program som presenterer de tre mest brukte startlokasjonene og de tre minst 
+brukte startlokasjonene. Presentasjonen skal også vise antall turer fra disse startlokasjonene.
+
+b)
+Utvid programmet slik at det også presenter et passende diagram som viser totalt antall turer 
+fra alle startlokasjoner til sammen, per ukedag.

@@ -2,6 +2,7 @@ from pyjstat import pyjstat
 import matplotlib.pyplot as plt
 
 url = 'https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/tec00001/A.B1GQ.CP_MEUR.DE+ES+FR+IT/?format=JSON&lang=en&startPeriod=2022&endPeriod=2022'
+# Bruk eventuelt den nedlasta versjonen av fila over: estat_tec00001_filtered_en.json
 ds = pyjstat.Dataset.read(url)
 df = ds.write('dataframe')
 print(df.head(5)) # Vis de fem første radene

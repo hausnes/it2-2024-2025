@@ -1,4 +1,4 @@
-# Enkel kakediagram
+# Enkelt kakediagram
 import matplotlib.pyplot as plt
 
 frukt = {'Eple': 3, 'Banan': 5, 'Appelsin': 2, 'Pære': 1}

@@ -1,0 +1,26 @@
+[
+    {
+        "Navn": "Ola",
+        "Alder": 27,
+        "Høyde": 180,
+        "Vekt": 75
+    },
+    {
+        "Navn": "Kari",
+        "Alder": 30,
+        "Høyde": 170,
+        "Vekt": 60
+    },
+    {
+        "Navn": "Per",
+        "Alder": 27,
+        "Høyde": 185,
+        "Vekt": 80
+    },
+    {
+        "Navn": "Lise",
+        "Alder": 28,
+        "Høyde": 165,
+        "Vekt": 55
+    }
+]

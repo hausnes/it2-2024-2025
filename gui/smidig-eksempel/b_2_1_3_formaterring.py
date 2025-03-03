@@ -11,7 +11,7 @@ def skriv_ut():
 root = tk.Tk()
 
 # Sett standard font for alle widgets i applikasjonen
-root.option_add("*Font", "Arial 20")
+root.option_add("*Font", "Comic Sans MS 20")
 
 # Endre tekst på tittellinjen
 root.title("Inndata/Utdata")

@@ -4,3 +4,4 @@
 **/libs
 .DS_Store
 **/build
+*.spec

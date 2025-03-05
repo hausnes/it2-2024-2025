@@ -21,6 +21,7 @@ root.configure(bg="#2e2e2e")
 
 # Legg til et bilde, krever from PIL import Image, ImageTk
 bilde = Image.open(Path(__file__).resolve().parent.joinpath("tkinter.jpg"))
+# bilde = Image.open("tkinter.jpg")
 bilde = bilde.resize((150, 150), Image.Resampling.LANCZOS)
 bilde = ImageTk.PhotoImage(bilde)
 tk.Label(root, image=bilde, bg="#2e2e2e").grid(row=0, column=0, padx=5, pady=5)

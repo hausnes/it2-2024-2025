@@ -17,8 +17,8 @@ root.option_add("*Font", "Arial 20")
 root.title("Inndata/Utdata")
 
 # Legg til et bilde, krever from PIL import Image, ImageTk
-# bilde = Image.open(Path(__file__).resolve().parent.joinpath("tkinter.jpg"))
-bilde = Image.open("tkinter.jpg") # Alternativ til linje over
+bilde = Image.open(Path(__file__).resolve().parent.joinpath("tkinter.jpg"))
+# bilde = Image.open("tkinter.jpg") # Alternativ til linje over
 bilde = bilde.resize((150, 150), Image.Resampling.LANCZOS)
 bilde = ImageTk.PhotoImage(bilde)
 tk.Label(root, image=bilde).grid(row=0, column=0, padx=5, pady=5)

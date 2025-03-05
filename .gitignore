@@ -3,3 +3,4 @@
 **/result
 **/libs
 .DS_Store
+**/build

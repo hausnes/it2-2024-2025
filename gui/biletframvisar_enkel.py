@@ -1,6 +1,5 @@
 import tkinter as tk
 from PIL import Image, ImageTk
-from pathlib import Path
 
 # Funksjon for å vise bildet
 def vis_bilde():

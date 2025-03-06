@@ -41,13 +41,18 @@ def vis_bilde():
 # Funksjon for å gå til forrige bilde
 def forrige_bilde():
     global bilde_index
-    bilde_index = (bilde_index - 1) % len(bilder)
+    bilde_index -= 1
+    if bilde_index < 0:
+        bilde_index = len(bilder) - 1 # Hopper til siste bilde
     vis_bilde()
 
 # Funksjon for å gå til neste bilde
 def neste_bilde():
     global bilde_index
-    bilde_index = (bilde_index + 1) % len(bilder)
+    # bilde_index = (bilde_index + 1) % len(bilder)
+    bilde_index += 1
+    if bilde_index >= len(bilder):
+        bilde_index = 0
     vis_bilde()
 
 # Opprett et vindu og sett tittel og størrelse

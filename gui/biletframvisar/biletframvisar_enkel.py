@@ -11,12 +11,18 @@ def vis_bilde():
 
 # Funksjon for å gå til forrige bilde
 def forrige_bilde():
-    bilde_index[0] = (bilde_index[0] - 1) % len(bilder)
+    if bilde_index[0] == 0:
+        bilde_index[0] = len(bilder) - 1
+    else:
+        bilde_index[0] -= 1
     vis_bilde()
 
 # Funksjon for å gå til neste bilde
 def neste_bilde():
-    bilde_index[0] = (bilde_index[0] + 1) % len(bilder)
+    if bilde_index[0] == len(bilder) - 1:
+        bilde_index[0] = 0
+    else:
+        bilde_index[0] += 1
     vis_bilde()
 
 # Opprett et vindu og sett tittel og størrelse

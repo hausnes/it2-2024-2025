@@ -31,14 +31,14 @@ default_font.configure(family='Arial', size=15)
 Ei skisse av GUI:
 
     R = row
-    K = column
+    C = column
     B = bilde
     L = label
     E = entry ("input")
     K = knapp
     R = resultat
 
-         K0  K1  K2
+         C0  C1  C2
     R0    B  L1   E
     R1    B  L2   E
     R2    B   K   K

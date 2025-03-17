@@ -39,8 +39,8 @@ Ei skisse av GUI:
     R = resultat
 
          C0  C1  C2
-    R0    B  L1   E
-    R1    B  L2   E
+    R0    B  L1  E1
+    R1    B  L2  E2
     R2    B   K   K
     R3    R   R   R
 '''
@@ -52,11 +52,11 @@ bilde = ImageTk.PhotoImage(bilde)
 bildeLabel = tk.Label(root, image=bilde)
 bildeLabel.grid(row=0, column=0, rowspan=3, padx=5, pady=5)
 
-# Label for avstand
+# L1 - Label for avstand
 labelAvstand = tk.Label(text='Avstand i km:', anchor='e', width=12)
 labelAvstand.grid(row=0, column=1)
 
-# Label for fart
+# L2 - Label for fart
 labelFart = tk.Label(text='Fart i knop:', anchor='e', width=12)
 labelFart.grid(row=1, column=1)
 
@@ -64,15 +64,15 @@ labelFart.grid(row=1, column=1)
 knapp = tk.Button(text='Regn ut flytid', bg='#cacaca', command=regn_ut)
 knapp.grid(row=2, column=1, columnspan=2, sticky='EW', padx=(0, 10))
 
-# Inputfelt for avstand
+# E1 - Inputfelt for avstand
 avstand = tk.Entry(width=10, font='Arial 15')
 avstand.grid(row=0, column=2, padx=10)
 
-# Inputfelt for farten
+# E2 - Inputfelt for farten
 fart = tk.Entry(width=10, font='Arial 15')
 fart.grid(row=1, column=2, padx=10)
 
-# Tekstfelt for resultatet
+# R - Tekstfelt for resultatet
 resultat = tk.Label(bg='white', borderwidth=2, relief='sunken')
 resultat.grid(row=3, column=0, columnspan=3, padx=10, pady=10, sticky='EW')
 

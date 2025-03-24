@@ -58,8 +58,12 @@ plt.show()
 # 3: - Finn ut kva type operativsystem som blir angripe oftast, av «Macintosh» og «Windows», og visualiser dette.
 
 # Filtrer rader som inneholder "Macintosh" eller "Windows" i kolonnen "Device Information"
+# Alternativ 1, kort, effektivt, elegant .. og lite logisk før du har sett det?
 macintosh_count = df['Device Information'].str.contains('Macintosh', na=False).sum()
 windows_count = df['Device Information'].str.contains('Windows', na=False).sum()
+
+# Alternativ 2: Steg-for-steg..
+# Sjå fila sikkerheit-vanilla.py
 
 # Skriv ut resultata
 print()

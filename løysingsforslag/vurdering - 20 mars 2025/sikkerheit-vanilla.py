@@ -28,8 +28,7 @@ print(f"Antall angrep på Macintosh: {mac_count}")
 print(f"Antall angrep på Windows: {win_count}")
 
 # Visualiser data
-os_counts = {'Macintosh': mac_count, 'Windows': win_count}
-plt.bar(os_counts.keys(), os_counts.values(), color=['blue', 'green'])
+plt.bar(['Macintosh', 'Windows'], [mac_count, win_count])
 plt.title('Antall angrep per operativsystem')
 plt.ylabel('Antall angrep')
 plt.xlabel('Operativsystem')
@@ -38,8 +37,8 @@ plt.show()
 
 # Alternativ visualisering - pie
 plt.pie(
-    os_counts.values(), 
-    labels=os_counts.keys(), 
+    [mac_count, win_count], 
+    labels=['Macintosh', 'Windows'], 
     autopct='%1.1f%%', 
     colors=['yellow', 'red'], 
     startangle=90

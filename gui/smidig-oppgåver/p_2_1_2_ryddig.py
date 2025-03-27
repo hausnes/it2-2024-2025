@@ -45,7 +45,7 @@ Ei skisse av GUI:
     R3    R   R   R
 '''
 
-# Bildet
+# B - Bildet
 bilde = Image.open("2_1_hastighetsmaaler.png")
 bilde = bilde.resize((150, 150), Image.Resampling.LANCZOS)
 bilde = ImageTk.PhotoImage(bilde)

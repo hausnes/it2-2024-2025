@@ -1,0 +1,11 @@
+@startuml Elbil
+class Elbil {
+    - batteri_nivaa : float
+    - forbruk_per_mil : float
+
+    + __init__(batteri_nivaa: float, forbruk_per_mil: float)
+    + beregn_rekkevidde() : float
+}
+@enduml
+
+'Smidig IT-2 © TIP AS 2024

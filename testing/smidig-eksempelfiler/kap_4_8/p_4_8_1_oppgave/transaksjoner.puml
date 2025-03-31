@@ -1,0 +1,21 @@
+@startuml transaksjoner
+
+class Konto {
+    - __saldo: int
+    + logg: Logg
+    + <<property>> saldo: int {readOnly}
+    + __init__(saldo=0, logg=None)
+    + innskudd(belop: int): void
+    + uttak(belop: int): bool
+}
+
+class Logg {
+    + transaksjoner: list
+    + legg_til(transaksjon: str): void
+    + hent_transaksjoner(): list
+}
+
+Konto o-- Logg : bruker
+@enduml
+
+' Smidig IT-2 © TIP AS 2024

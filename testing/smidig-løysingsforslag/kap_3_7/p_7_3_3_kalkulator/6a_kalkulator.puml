@@ -1,0 +1,14 @@
+'Oppgave 6a, IT-2 Eksamen, Vår 2024
+@startuml Kalkulator
+class Kalkulator {
+    +pluss(x: Double, y: Double): Double
+    +minus(x: Double, y: Double): Double
+    +gange(x: Double, y: Double): Double
+    +dele(x: Double, y: Double): Double
+}
+
+note "Alle metoder aksepterer int og double som argumenter. \nFor dele(x, y), må y ikke være 0." as N1
+Kalkulator .. N1
+@enduml
+
+'Smidig IT-2  © TIP AS, 2024

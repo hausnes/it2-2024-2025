@@ -52,6 +52,14 @@ def tal_er_palindrom(n):
 # Eksempel på bruk:
 tall = int(input("Skriv inn eit positivt heiltal: "))
 if tal_er_palindrom(tall):
-  print("True")
+    print("True")
 else:
-  print("False")
+    print("False")
+
+# Kor mange tresifra palindromtal er det?
+antall_palindrom = 0
+for h in range(100, 1000):  # Går gjennom alle tresifra tall
+    if tal_er_palindrom(h):
+        antall_palindrom += 1
+
+print(f"Antall tresifrede palindromtall: {antall_palindrom}")

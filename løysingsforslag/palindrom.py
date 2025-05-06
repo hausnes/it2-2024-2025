@@ -25,3 +25,33 @@ def er_palindrom_alternativ(s):
 test_streng = "A man a plan a canal Panama"
 print(er_palindrom(test_streng))  # Output: True
 print(er_palindrom_alternativ(test_streng)) # Output: True
+
+def tal_er_palindrom(n):
+    """
+    Sjekkar om eit positivt heiltall er eit palindrom.
+
+    Args:
+        n: Eit positivt heiltal.
+
+    Returns:
+        True dersom n er eit palindrom, False ellers.
+    """
+    if n < 0:
+        return False  # Palindrom definerast vanlegvis for ikkje-negative tal
+
+    original_tall = n
+    reversert_tall = 0
+
+    while n > 0:
+        siste_siffer = n % 10
+        reversert_tall = (reversert_tall * 10) + siste_siffer
+        n //= 10
+
+    return original_tall == reversert_tall
+
+# Eksempel på bruk:
+tall = int(input("Skriv inn eit positivt heiltal: "))
+if tal_er_palindrom(tall):
+  print("True")
+else:
+  print("False")
